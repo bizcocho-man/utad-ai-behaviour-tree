@@ -1,0 +1,24 @@
+<behavior-tree>
+  <root-node type="selector">
+    
+    <!--Die-->
+    <group type="sequence">
+      <behavior type="check-health" is-inverse="false" value-to-compare="0"></behavior>
+      <behavior type="set-image" image="mage_die.png"></behavior>
+      <behavior type="wait-time" time-to-wait="0.1"></behavior>
+      <behavior type="die"></behavior>
+    </group>
+    
+    <!--Receive damage-->
+    <group type="sequence">
+      <behavior type="check-health" is-inverse="true" value-to-compare="1"></behavior>
+      <behavior type="check-receive-damage"></behavior>
+      <behavior type="set-image" image="mage_pain.png"></behavior>
+      <behavior type="wait-time" time-to-wait="0.15"></behavior>
+    </group>
+    
+    <!--Idle-->
+    <behavior type="set-image" image="mage_idle.png"></behavior>
+    
+  </root-node>
+</behavior-tree>

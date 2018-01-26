@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="gameConfig.cpp" />
+    <ClCompile Include="host\FolderWatcher-win.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\GlutHost.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\GlutHostMain.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\ParticlePresets.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="params.cpp" />
+    <ClCompile Include="behaviortree\behavior.cpp">
+      <Filter>behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="behaviortree\selector.cpp">
+      <Filter>behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="behaviortree\sequence.cpp">
+      <Filter>behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="behaviortree\behaviortree.cpp">
+      <Filter>behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="behaviortree\group.cpp">
+      <Filter>behaviortree</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="character.h" />
+    <ClInclude Include="gameConfig.h" />
+    <ClInclude Include="host\FolderWatcher-win.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\GlutHost.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\ParticlePresets.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="params.h" />
+    <ClInclude Include="behaviortree\behavior.h">
+      <Filter>behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviortree\status.h">
+      <Filter>behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviortree\group.h">
+      <Filter>behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviortree\selector.h">
+      <Filter>behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviortree\sequence.h">
+      <Filter>behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviortree\behaviortree.h">
+      <Filter>behaviortree</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="host">
+      <UniqueIdentifier>{87717a51-4516-4c06-a1de-c6b89a5c16e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample">
+      <UniqueIdentifier>{dafee91e-18b1-4dd7-a488-726565484f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviortree">
+      <UniqueIdentifier>{c1e28f14-acf3-4402-9d43-ddeabaf4a1dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sample\test.lua">
+      <Filter>sample</Filter>
+    </None>
+    <None Include="sample\navmesh.xml">
+      <Filter>sample</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="sample\params.xml">
+      <Filter>sample</Filter>
+    </Xml>
+    <Xml Include="sample\grid.xml">
+      <Filter>sample</Filter>
+    </Xml>
+    <Xml Include="sample\weights.xml">
+      <Filter>sample</Filter>
+    </Xml>
+    <Xml Include="sample\behaviortree.xml">
+      <Filter>sample</Filter>
+    </Xml>
+    <Xml Include="sample\enemybehaviortree.xml">
+      <Filter>sample</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

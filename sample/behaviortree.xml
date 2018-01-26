@@ -1,0 +1,31 @@
+<behavior-tree>
+  <root-node type="selector">
+    <!--Attack-->
+    <group type="sequence">
+      <behavior type="check-for-target" is-inverse="false"></behavior>
+      <behavior type="check-distance" is-inverse="false" distance="100"></behavior>
+      <behavior type="set-image" image="dragon_prepare_attack.png"></behavior>
+      <behavior type="wait-time" time-to-wait="0.5"></behavior>
+      <behavior type="set-image" image="dragon_attack.png"></behavior>
+      <behavior type="attack" damage="50"></behavior>
+      <behavior type="wait-time" time-to-wait="0.15"></behavior>
+    </group>
+
+    <!--Move to target-->
+    <group type="sequence">
+      <behavior type="check-for-target" is-inverse="false"></behavior>
+      <behavior type="check-distance" is-inverse="true" distance="100"></behavior>
+      <behavior type="set-image" image="dragon_alert.png"></behavior>
+      <behavior type="wait-time" time-to-wait="0.5"></behavior>
+      <behavior type="set-image" image="dragon_moving.png"></behavior>
+      <behavior type="move-to-target" speed="80" stop-distance="100"></behavior>
+    </group>
+    
+    <!--Idle-->
+    <group type="sequence">
+      <behavior type="check-for-target" is-inverse="true"></behavior>
+      <behavior type="set-image" image="dragon_idle.png"></behavior>
+    </group>
+    
+  </root-node>
+</behavior-tree>
